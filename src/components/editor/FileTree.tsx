@@ -46,7 +46,7 @@ function FileTreeNode({ node, level }: FileTreeNodeProps) {
       <div
         className={cn(
           "flex items-center gap-2 px-2 py-1.5 hover:bg-gray-100 cursor-pointer text-sm transition-colors",
-          selectedFile === node.path && "bg-blue-50 text-blue-600"
+          selectedFile === node.path && "bg-purple-50 text-purple-600"
         )}
         style={{ paddingLeft: `${level * 12 + 8}px` }}
         onClick={handleClick}
@@ -59,9 +59,9 @@ function FileTreeNode({ node, level }: FileTreeNodeProps) {
               <ChevronRight className="h-3.5 w-3.5 shrink-0 text-gray-500" />
             )}
             {isExpanded ? (
-              <FolderOpen className="h-4 w-4 shrink-0 text-blue-500" />
+              <FolderOpen className="h-4 w-4 shrink-0 text-purple-500" />
             ) : (
-              <Folder className="h-4 w-4 shrink-0 text-blue-500" />
+              <Folder className="h-4 w-4 shrink-0 text-purple-500" />
             )}
           </>
         ) : (

@@ -334,24 +334,24 @@ const Counter = () => {
 
   return (
     <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-md">
-      <h2 className="text-2xl font-bold mb-4">Counter</h2>
-      <div className="text-4xl font-bold mb-6">{count}</div>
+      <h2 className="text-2xl font-bold mb-4 text-purple-700">Counter</h2>
+      <div className="text-4xl font-bold mb-6 text-purple-600">{count}</div>
       <div className="flex gap-4">
-        <button 
+        <button
           onClick={decrement}
-          className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600 transition-colors"
+          className="px-4 py-2 bg-purple-400 text-white rounded hover:bg-purple-500 transition-colors"
         >
           Decrease
         </button>
-        <button 
+        <button
           onClick={reset}
-          className="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600 transition-colors"
+          className="px-4 py-2 bg-purple-200 text-purple-800 rounded hover:bg-purple-300 transition-colors"
         >
           Reset
         </button>
-        <button 
+        <button
           onClick={increment}
-          className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 transition-colors"
+          className="px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700 transition-colors"
         >
           Increase
         </button>
